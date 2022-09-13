@@ -6,3 +6,4 @@
     Instalado o nodemon
     Criei script "start" para iniciar a aplicação
     Criado a pasta src e ./src/routes.js e ./src/server.js
+## Primeiro commit finalizado
