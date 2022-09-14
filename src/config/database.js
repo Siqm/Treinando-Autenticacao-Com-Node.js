@@ -1,8 +1,8 @@
 module.exports = {
     dialect:'postgres',
-    host:'kesavan.db.elephantsql.com',
-    username:'rhcvhoyy',
-    password:'LbkbHqgKa_MskKcbl-HeEywXn9uwMN0P',
+    host:'localhost',
+    username:'postgres',
+    password:'4adL#iKA 91maA',
     database:'sqlnode',
     ssl: true,
     define: {
