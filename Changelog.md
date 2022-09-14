@@ -75,6 +75,7 @@ Dia 02
     4. Também é importante criar um diretório "src/controllers" onde criamos o controlador de usuario "UserController.js"
     5. Com a rota de post para usuarios configurada, rodamos a aplicação e torcemos para não ter erros! (esta tinha e eles foram corrigidos neste commit) 
     
-    ##### Mas e para métodos post?
+##### Mas e para métodos post?
     Para isso vamos primeiro configuar a rota e depois a gente implementa o método no controller!
 ### Quinto commit realizado, implementado o modelo de usuario, seus métodos e rotas para acesa-lo
+### Sexto commit realizado, correção no changelog e finalizando o dia 2!
