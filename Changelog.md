@@ -32,3 +32,36 @@ Dia 02
     O caminho para as migrações será src/database/migrations, e para o sequelize ficar ciente disso,
     foi feita uma alteração no .sequelizerc, para avisar o caminho
     Criando a micração com o comando "npx sequelize migration:create --name=create-users", criando a tabela de usuários
+### Terceiro Commit finalizado, database configurada
+
+# Preparando a migration de usuario:
+    Editando a migrations de users, editando campo id e adicionando name, email, created_at e updated_at
+    Rodando as migrations com "npx sequelize db:migrate"
+## E se eu quiser adicionar uma nova coluna e meu banco já está em produção?
+    1. O único jeito é fazendo uma nova migration para resolver essa questão, então temos:
+        "npx sequelize migration:create --name=_ _ _ _ _" (nome que faça sentido com o campo novo e a tabela que se faz referencia)
+
+    2. e dentro da classe criada, colocamos o código: 
+
+        module.exports = {
+            up: (queryInterface, Sequelize) => {
+                return queryInterface.addColumn(
+                    'users',    //nome da tabela
+                    'age',      //nome da coluna a ser adicionada
+                    {
+                    type: Sequelize.INTEGER,
+                    },
+                );
+            },
+ 
+            down: (queryInterface, Sequelize) => {
+                return queryInterface.addColmn(
+                    'users',
+                    'age',
+                )
+            }
+        };
+
+    3. É importante não esquecer de executar o comando de migração!
+
+### Quarto commit realiado, implementada a tabela de usuario com migrações!
