@@ -38,10 +38,10 @@ Dia 02
     Editando a migrations de users, editando campo id e adicionando name, email, created_at e updated_at
     Rodando as migrations com "npx sequelize db:migrate"
 #### E se eu quiser adicionar uma nova coluna e meu banco já está em produção?
-    1. O único jeito é fazendo uma nova migration para resolver essa questão, então temos:
+1. O único jeito é fazendo uma nova migration para resolver essa questão, então temos:
         "npx sequelize migration:create --name=_ _ _ _ _" (nome que faça sentido com o campo novo e a tabela que se faz referencia)
 
-    2. e dentro da classe criada, colocamos o código: 
+2. e dentro da classe criada, colocamos o código: 
 
         module.exports = {
             up: (queryInterface, Sequelize) => {
@@ -62,20 +62,34 @@ Dia 02
             }
         };
 
-    3. É importante não esquecer de executar o comando de migração!
+3. É importante não esquecer de executar o comando de migração!
 
 ### Quarto commit realiado, implementada a tabela de usuario com migrações!
 
 # Começando a implementar os modelos!
-    1. É criada o diretorio "src/models" e o arquivo User.js dentro de "models"
-    User será nosso primeiro modelo e precisamos construir os objetos de configuração dentro dele
-    2. Feito isso, tambem precisamos ir em "src/database/index.js", importar e declarar o init dele
+1. É criada o diretorio "src/models" e o arquivo User.js dentro de "models"
+User será nosso primeiro modelo e precisamos construir os objetos de configuração dentro dele
+2. Feito isso, tambem precisamos ir em "src/database/index.js", importar e declarar o init dele
     Com esses passos, o modelo já está funcional
-    3. Para testar, vamos criar uma rota em "src/routes.js"
-    4. Também é importante criar um diretório "src/controllers" onde criamos o controlador de usuario "UserController.js"
-    5. Com a rota de post para usuarios configurada, rodamos a aplicação e torcemos para não ter erros! (esta tinha e eles foram corrigidos neste commit) 
+3. Para testar, vamos criar uma rota em "src/routes.js"
+4. Também é importante criar um diretório "src/controllers" onde criamos o controlador de usuario "UserController.js"
+5. Com a rota de post para usuarios configurada, rodamos a aplicação e torcemos para não ter erros! (esta tinha e eles foram corrigidos neste commit) 
     
-##### Mas e para métodos post?
+##### Mas e para métodos get?
     Para isso vamos primeiro configuar a rota e depois a gente implementa o método no controller!
 ### Quinto commit realizado, implementado o modelo de usuario, seus métodos e rotas para acesa-lo
 ### Sexto commit realizado, correção no changelog e finalizando o dia 2!
+Dia 03
+# Adicionando uma classe com relacionamento
+1. Criar a migration da classe "npx sequelize migration:create --name=adresses"
+2. Copiei o conteudo da *migration de usuario* e alterei os campos e nome da tabela **para a migration de adresses**
+3. Criei o modelo de Adress em Models
+4. Copiei o conteudo do modelo de user para modelo de address, alterando o conteúdo
+5. Iniciei o Address em ./database/index.js
+6. Criei o controller de Addresses
+7. Definir uma rota
+    Tudo pronto e bora rodar né?
+    OPSSS na hora do post a gente percebe que algo ta errado!
+8. Faltou definir a associação entre as tabelas, pra fazer isso, vamos no modelo de address e definir 
+9. Também é importante 
+ dia finalizado
