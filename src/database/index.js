@@ -1,3 +1,5 @@
+// Para os modelos serem inicializados na aplicação, deve-se informa-los aqui
+
 const Sequelize = require('sequelize');
 const dbConfig = require('../config/database');
 
@@ -6,7 +8,9 @@ const Address = require('../models/Address')
 
 const connection = new Sequelize(dbConfig);
 
-User.init(connection);
+User.init(connection); // toda vez que eu dou um init, ele cadastra o model dentro da conexão
 Address.init(connection)
+
+Address.associate(connection.models)
 
 module.exports = connection;

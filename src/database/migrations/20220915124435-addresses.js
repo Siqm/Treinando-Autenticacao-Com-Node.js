@@ -9,10 +9,10 @@ module.exports = {
           autoIncrement: true,
           allowNull: false,
         },
-        user_id: {
+        user_id: { // user_id é a chave estrangeira
           type: Sequelize.INTEGER,
           allowNull: false,
-          references: { model: 'users', key: 'id' },
+          references: { model: 'users', key: 'id' }, // references é o que referencia uma outra tabela
           onUpdate: 'CASCADE',
           onDelete: 'CASCADE',
         },

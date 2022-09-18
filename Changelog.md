@@ -82,7 +82,7 @@ User será nosso primeiro modelo e precisamos construir os objetos de configura�
 Dia 03
 # Adicionando uma classe com relacionamento
 1. Criar a migration da classe "npx sequelize migration:create --name=adresses"
-2. Copiei o conteudo da *migration de usuario* e alterei os campos e nome da tabela **para a migration de adresses**
+2. Copiei o conteudo da *./migrations/__-create-users* e alterei os campos e nome da tabela para **./migrations/__-addresses**
 3. Criei o modelo de Adress em Models
 4. Copiei o conteudo do modelo de user para modelo de address, alterando o conteúdo
 5. Iniciei o Address em ./database/index.js
@@ -91,5 +91,9 @@ Dia 03
     Tudo pronto e bora rodar né?
     OPSSS na hora do post a gente percebe que algo ta errado!
 8. Faltou definir a associação entre as tabelas, pra fazer isso, vamos no modelo de address e definir 
-9. Também é importante 
- dia finalizado
+9. Também é importante dizer no database/index.js que a associação está sendo feita
+
+*dia finalizado*
+
+### Sétimo commit realizado, Classe com relacionamento unidirecional
+
