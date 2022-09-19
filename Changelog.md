@@ -1,4 +1,5 @@
-Dia 01:
+*Dia 01*
+
 # Instalação:
     Criado o repositório, acessado com o terminal e executado "npm init -y"
     Instalado tambem o sequelize, "npm install sequelize"
@@ -21,7 +22,9 @@ Dia 01:
     Resolução:
         Instalei postgres na maquina, porta: 5432
 ### Finalizando o dia, commit realizado, problema não resolvido
-Dia 02
+
+*Dia 02*
+
 # Resolvendo problema do dia anterior
     Problema: Erro ao executar "npx sequelize db:create",
     Resolução:
@@ -79,7 +82,9 @@ User será nosso primeiro modelo e precisamos construir os objetos de configura�
     Para isso vamos primeiro configuar a rota e depois a gente implementa o método no controller!
 ### Quinto commit realizado, implementado o modelo de usuario, seus métodos e rotas para acesa-lo
 ### Sexto commit realizado, correção no changelog e finalizando o dia 2!
-Dia 03
+
+*Dia 03*
+
 # Adicionando uma classe com relacionamento
 1. Criar a migration da classe "npx sequelize migration:create --name=adresses"
 2. Copiei o conteudo da *./migrations/__-create-users* e alterei os campos e nome da tabela para **./migrations/__-addresses**
@@ -97,3 +102,11 @@ Dia 03
 
 ### Sétimo commit realizado, Classe com relacionamento unidirecional
 
+*dia 04*
+    Finalização do sétimo commit, era domigão né...
+
+*Dia 05*
+    Mais uma segunda-feira abençoada fml, pra cima deles!
+# Implementando o relacionamento de users > Addresses 
+
+### Oitavo Commit, Changelog duplicado
