@@ -107,6 +107,15 @@ User será nosso primeiro modelo e precisamos construir os objetos de configura�
 
 *Dia 05*
     Mais uma segunda-feira abençoada fml, pra cima deles!
-# Implementando o relacionamento de users > Addresses 
+
+# Implementando o relacionamento de users > Addresses e Devolvendo a lista de endereços de um usuário
 
 ### Oitavo Commit, Changelog duplicado
+
+*NEM SEMPRE É NECESSÁRIO TER UMA RELAÇÃO COMO ESSA*
+
+1. Definir a associação no modelo User.js
+2. Criar o método responsável pelo calculo da solicitação no AdressController.js
+3. Informar a associação em ./database/index.js
+
+### Nono Commit realizado, relacionamento de usuario TEM MUITOS endereços implementado e método que devolve uma lista de endereços de terminado usuario

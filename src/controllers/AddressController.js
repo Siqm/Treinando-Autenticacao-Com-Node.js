@@ -2,13 +2,24 @@ const Address = require('../models/Address') // Existe a possibilidade de criar 
 const User = require('../models/User') // No nosso caso, não faz sentido. Então a gente já importa ele aqui
 
 module.exports = {
+    async index(req, params) {
+        const { user_id } = req.params;
+
+        // Todo método find() aceita como parametro um objeto que indica o relacionamento 
+        const user = await User.findByPk(user_id, {
+            include: { association: 'addresses' }
+        })
+
+        return res.json(user);
+    },
+
     async store (req, res) {
         const { user_id } = req.params; // O Id do Usuário vem como parametro no endpoint
         const { zipcode, street, number } = req.body; // Enquanto as informações do endereço, vem no corpo da requisição
         
         const user = await User.findByPk(user_id);
 
-        if (!user) {
+        if (!user) { 
             return res.status(400).json({ error: 'User not found'});
         }
 

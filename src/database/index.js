@@ -11,6 +11,7 @@ const connection = new Sequelize(dbConfig);
 User.init(connection); // toda vez que eu dou um init, ele cadastra o model dentro da conexão
 Address.init(connection)
 
+User.associate(connection.models)
 Address.associate(connection.models)
 
 module.exports = connection;
