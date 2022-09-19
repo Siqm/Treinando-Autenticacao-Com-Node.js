@@ -2,7 +2,7 @@ const Address = require('../models/Address') // Existe a possibilidade de criar 
 const User = require('../models/User') // No nosso caso, não faz sentido. Então a gente já importa ele aqui
 
 module.exports = {
-    async index(req, params) {
+    async index(req, res) {
         const { user_id } = req.params;
 
         // Todo método find() aceita como parametro um objeto que indica o relacionamento 

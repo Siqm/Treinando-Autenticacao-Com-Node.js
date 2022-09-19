@@ -119,3 +119,17 @@ User será nosso primeiro modelo e precisamos construir os objetos de configura�
 3. Informar a associação em ./database/index.js
 
 ### Nono Commit realizado, relacionamento de usuario TEM MUITOS endereços implementado e método que devolve uma lista de endereços de terminado usuario
+
+4. Me esqueci de criar a rota de GET para o novo método
+5. Código testado e funcionando!
+
+# Implementando um relacionamento muitos para muitos
+
+Pensando no conceito de Muitos para muitos, o necessário para essa relação funcionar de forma eficiente é criar uma outra tabela que guarda os dados, relacionando os ids da primeira tabela, com os ids da segunda tabela, por exemplo.
+
+1. Criando a tabela de tecnologias com o comando "npx sequelize migration:create --name=create-techs"
+2. Criando a tabela de relacionamento Muitos para Muitos "npx sequelize migration:create --name=user_techs"
+
+Dia finalizado!
+
+### 10° Commit, relacionamento de muitos para muitos em desenvolvimento 

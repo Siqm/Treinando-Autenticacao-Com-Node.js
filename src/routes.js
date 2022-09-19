@@ -13,5 +13,6 @@ routes.get('/users', UserController.index)
 
 // Atrelando o cadastro de um endereço diretamente a um usuário, específicado pelo id do usuário
 routes.post('/users/:user_id/addresses', AddressController.store)
+routes.get('/users/:user_id/addresses', AddressController.index)
 
 module.exports = routes;
