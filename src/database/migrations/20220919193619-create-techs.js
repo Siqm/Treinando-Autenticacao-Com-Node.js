@@ -9,8 +9,8 @@ module.exports = {
           autoIncrement: true,
           allowNull: false,
         },
-        number: {
-          type: Sequelize.INTEGER,
+        name: {
+          type: Sequelize.STRING,
           allowNull: false,
         },
         created_at: {

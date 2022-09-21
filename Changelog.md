@@ -129,7 +129,19 @@ Pensando no conceito de Muitos para muitos, o necessário para essa relação fu
 
 1. Criando a tabela de tecnologias com o comando "npx sequelize migration:create --name=create-techs"
 2. Criando a tabela de relacionamento Muitos para Muitos "npx sequelize migration:create --name=user_techs"
+3. Migrar as tabelas usando "npx sequelize db:migrate"
 
 Dia finalizado!
 
 ### 10° Commit, relacionamento de muitos para muitos em desenvolvimento 
+
+*Dia 06*
+
+4. Criando o modelo de Tech e definindo a relação
+5. Adicionar a relação no modelo de user
+6. Definir rotas
+7. Importar e informar associações do Tech no ./database/index.js
+8. Criar o controller para Tech
+9. Explicar para o sequelize a pluralização correta de techs no modelo Tech
+
+### 11° Deu erro, Comittando para voltar em comitts anteriors

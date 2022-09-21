@@ -12,6 +12,7 @@ class User extends Model {
 
     static associate(models) {
         this.hasMany(models.Address, { foreignKey: 'user_id', as: 'addresses' }) // A coluna de relacionamento (FK) é a que está na tabela de belongsTo()
+        this.belongsToMany(models.Tech, { foreignKey: 'user_id', through: 'user_techs', as: 'techs'})
     }
 }
 
