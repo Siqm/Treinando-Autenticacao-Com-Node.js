@@ -119,3 +119,17 @@ User será nosso primeiro modelo e precisamos construir os objetos de configura�
 3. Informar a associação em ./database/index.js
 
 ### Nono Commit realizado, relacionamento de usuario TEM MUITOS endereços implementado e método que devolve uma lista de endereços de terminado usuario
+
+*Dia **nemSeiMais***
+
+# Implementando relacionamento muitos para muitos
+
+1. Criando tabela techs com o comando 'npx sequelize migration:create --name=create-techs'
+2. Criando a tabela de relacionamento N-N "npx sequelize migration:create --name=user_techs"
+3. Criar um controller para Techs
+4. Criar um modelo para Tech e definir a associação
+5. Criar rotas
+6. Iniciar os modelos e suas associações na database
+7. Deixar explícito a pluralização de Tech para o sequelize
+
+### Commit 12 realizado, Implementado método post em um relacionamento muito para muitos
