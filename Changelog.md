@@ -133,3 +133,7 @@ User será nosso primeiro modelo e precisamos construir os objetos de configura�
 7. Deixar explícito a pluralização de Tech para o sequelize
 
 ### Commit 12 realizado, Implementado método post em um relacionamento muito para muitos
+
+*Dia 08*
+
+Implementado o método de get para as tecnologias de um usuário
