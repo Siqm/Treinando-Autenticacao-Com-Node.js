@@ -86,7 +86,7 @@ User será nosso primeiro modelo e precisamos construir os objetos de configura�
 *Dia 03*
 
 # Adicionando uma classe com relacionamento
-1. Criar a migration da classe "npx sequelize migration:create --name=adresses"
+1. Criar a migration da classe "npx sequelize migration:create --name=addresses"
 2. Copiei o conteudo da *./migrations/__-create-users* e alterei os campos e nome da tabela para **./migrations/__-addresses**
 3. Criei o modelo de Adress em Models
 4. Copiei o conteudo do modelo de user para modelo de address, alterando o conteúdo
